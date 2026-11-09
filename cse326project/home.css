@@ -1,31 +1,326 @@
-//.homebody {
-min-height: 100vh;
-font-family: 'plus jakarta sans',
-sans-serif;
-background: radial-gradient(circle at 15% 20%, rgba(212, 175, 55, 0.12) 0%, transparent 45%),
-radial-gradient(circle at 85% 80%, rgba(107, 20, 38, 0.08) 0%, transparent 50%),
-linear-gradient(180deg, #faf7f2 0%, #f4ede2 100%);
-background-attachment: fixed;
-
-display: flex;
-justify-content;
-center;
-align-items: center;
-padding: 24px;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
 
+/* Basic page settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homebody {
+    background-color: #f3f4f6;
+    font-family: 'Inter', sans-serif;
+    color: #252c38;
+    min-height: 100vh;
+}
+
+
+/* Main heading */
+
+.home-title {
+    background-color: #101d35;
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 15px;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #b99a60;
+}
+
+
+/* Navigation sections */
+
+.nav-main,
+.nav-account,
+.nav-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-main {
+    background-color: #172945;
+}
+
+.nav-account {
+    background-color: #e5e7eb;
+}
+
+.nav-upload {
+    background-color: #f3f4f6;
+}
+
+
+/* Navigation buttons */
+
+.nav-main button,
+.nav-account button,
+.nav-upload button,
+.help-section button {
+    background-color: #ffffff;
+    color: #172945;
+    border: 1px solid #b99a60;
+    border-radius: 5px;
+    padding: 11px 23px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-main button {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #8d9bb0;
+}
+
+.nav-main button:hover {
+    background-color: #b99a60;
+    color: #101d35;
+}
+
+.nav-account button:hover,
+.nav-upload button:hover,
+.help-section button:hover {
+    background-color: #172945;
+    color: #ffffff;
+}
+
+
+/* Video and quote layout */
+
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 60px;
+    background-color: #ffffff;
+}
+
+
+/* Left quote section */
+
+.quote-section {
+    width: 42%;
+    min-height: 230px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.quote-content {
+    display: none;
+    animation: fadeEffect 1s ease;
+}
+
+.quote-content.active {
+    display: block;
+}
+
+.quote-content h2 {
+    font-family: 'Cinzel', serif;
+    color: #172945;
+    font-size: 27px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.quote-content p {
+    font-family: 'Inter', sans-serif;
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.9;
+    border-left: 3px solid #b99a60;
+    padding-left: 15px;
+}
+
+
+/* Video styling */
+
+.home-video {
+    width: 55%;
+    max-width: 850px;
+    height: auto;
+    border: 5px solid #172945;
+    border-radius: 8px;
+    background-color: #101d35;
+}
+
+
+/* Quote fade animation */
+
+@keyframes fadeEffect {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
 }
 
-h1 {
-    font-family: 'Cinzel', serif;
-    font-size: 2.2rem;
-    font-weight: 800;
+
+/* Appointment section */
+
+.appointment-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px 45px;
+    background-color: #ffffff;
+}
+
+.appointment-btn {
+    background-color: #b99a60;
+    color: #101d35;
+    border: none;
+    border-radius: 5px;
+    padding: 16px 35px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.appointment-btn:hover {
+    background-color: #172945;
+    color: #ffffff;
+}
+
+
+/* Footer */
+
+.home-footer {
+    background-color: #101d35;
+    color: #d5dbe4;
+    padding: 30px 35px;
     text-align: center;
-    color: #6b1426;
-    letter-spacing: 2px;
-    margin: 15px auto 25px auto;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8),
-        0 2px 8px rgba(107, 20, 38, 0.15);
+    border-top: 4px solid #b99a60;
+}
+
+.footer-heading {
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    font-size: 21px;
+    margin-bottom: 18px;
+}
+
+.footer-links {
+    color: #d2b77f;
+    font-size: 13px;
+    line-height: 2;
+    margin-bottom: 18px;
+}
+
+.footer-info {
+    color: #aeb8c7;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* Help section */
+
+.help-section {
+    background-color: #101d35;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 30px 25px;
+}
+
+
+/* Tablet responsive design */
+
+@media screen and (max-width: 768px) {
+
+    .home-title {
+        font-size: 23px;
+        padding: 25px 10px;
+    }
+
+    .nav-main,
+    .nav-account,
+    .nav-upload {
+        gap: 10px;
+    }
+
+    .nav-main button,
+    .nav-account button,
+    .nav-upload button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .video-section {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .quote-section {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .quote-content h2 {
+        font-size: 22px;
+    }
+
+    .home-video {
+        width: 100%;
+    }
+
+    .appointment-btn {
+        font-size: 13px;
+        padding: 14px 22px;
+    }
+
+    .home-footer {
+        padding: 25px 15px;
+    }
+
+}
+
+
+/* Mobile responsive design */
+
+@media screen and (max-width: 480px) {
+
+    .home-title {
+        font-size: 19px;
+        letter-spacing: 1px;
+    }
+
+    .nav-main,
+    .nav-account,
+    .nav-upload {
+        flex-direction: column;
+    }
+
+    .nav-main a,
+    .nav-account a,
+    .nav-upload a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-main button,
+    .nav-account button,
+    .nav-upload button {
+        width: 90%;
+    }
+
 }
