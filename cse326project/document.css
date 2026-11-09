@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
-/* Basic page settings */
+
 
 * {
     margin: 0;
@@ -28,7 +28,7 @@
     border-bottom: 4px solid #b99a60;
 }
 
-/* Page heading */
+
 
 .document-heading {
     text-align: center;
@@ -47,7 +47,7 @@
     font-size: 15px;
 }
 
-/* Document cards layout */
+
 
 .document-grid {
     width: 90%;
@@ -58,7 +58,7 @@
     gap: 25px;
 }
 
-/* Individual document card */
+
 
 .document-card {
     background-color: white;
@@ -82,7 +82,7 @@
     margin-bottom: 18px;
 }
 
-/* Document images */
+
 
 .document-image {
     width: 100%;
@@ -93,7 +93,7 @@
     margin-bottom: 20px;
 }
 
-/* Upload fields */
+
 
 .upload-field {
     text-align: left;
@@ -118,7 +118,7 @@
     font-size: 12px;
 }
 
-/* Verification section */
+
 
 .verification-section {
     width: 90%;
@@ -145,7 +145,7 @@
     accent-color: #172945;
 }
 
-/* Reset and Submit buttons */
+
 
 .document-buttons {
     text-align: center;
@@ -184,7 +184,7 @@
     color: #101d35;
 }
 
-/* Tablet screen */
+
 
 @media screen and (max-width: 900px) {
     .document-grid {
@@ -192,7 +192,7 @@
     }
 }
 
-/* Mobile screen */
+
 
 @media screen and (max-width: 600px) {
     .document-title {

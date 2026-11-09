@@ -1,7 +1,4 @@
-/* =================================
-   CITY MARRIAGE SYSTEM
-   APPLICATION PAGE
-================================= */
+
 
 * {
     margin: 0;
@@ -15,7 +12,7 @@ body {
     color: #263449;
 }
 
-/* HEADER */
+
 
 .apply-header {
     background-color: #14243d;
@@ -35,7 +32,7 @@ body {
     color: #c4a96e;
 }
 
-/* MAIN CONTAINER */
+
 
 .apply-container {
     padding: 55px 20px;
@@ -43,7 +40,7 @@ body {
     justify-content: center;
 }
 
-/* APPLICATION CARD */
+
 
 .apply-card {
     background-color: white;
@@ -56,7 +53,7 @@ body {
     box-shadow: 0 8px 30px rgba(20, 36, 61, 0.09);
 }
 
-/* TITLES */
+
 
 .section-title {
     font-family: 'Cinzel', serif;
@@ -72,7 +69,7 @@ body {
     margin-bottom: 35px;
 }
 
-/* FORM HEADING */
+
 
 .form-heading {
     color: #14243d;
@@ -82,7 +79,7 @@ body {
     border-bottom: 2px solid #b69b62;
 }
 
-/* FORM GRID */
+
 
 .form-grid {
     display: grid;
@@ -90,7 +87,7 @@ body {
     gap: 20px 25px;
 }
 
-/* FORM GROUP */
+
 
 .form-group {
     display: flex;
@@ -105,7 +102,7 @@ body {
     margin-bottom: 9px;
 }
 
-/* INPUTS AND SELECT */
+
 
 .form-group input,
 .form-group select {
@@ -127,7 +124,7 @@ body {
     box-shadow: 0 0 5px rgba(182, 155, 98, 0.3);
 }
 
-/* QUESTIONS SECTION */
+
 
 .questions-section {
     margin-top: 25px;
@@ -138,7 +135,7 @@ body {
     margin-bottom: 22px;
 }
 
-/* ACTION BUTTONS */
+
 
 .form-actions {
     display: flex;
@@ -160,7 +157,7 @@ body {
     transition: 0.3s;
 }
 
-/* SECONDARY BUTTON */
+
 
 .secondary-btn {
     background-color: white;
@@ -173,7 +170,7 @@ body {
     color: white;
 }
 
-/* PRIMARY BUTTON */
+
 
 .primary-btn {
     background-color: #14243d;
@@ -186,7 +183,7 @@ body {
     color: #14243d;
 }
 
-/* FOOTER */
+
 
 .apply-footer {
     background-color: #14243d;
@@ -197,7 +194,7 @@ body {
     font-size: 13px;
 }
 
-/* TABLET RESPONSIVE */
+
 
 @media screen and (max-width: 768px) {
 
@@ -224,7 +221,7 @@ body {
 
 }
 
-/* MOBILE RESPONSIVE */
+
 
 @media screen and (max-width: 480px) {
 

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
-/* Basic page settings */
+
 
 * {
     margin: 0;
@@ -15,7 +15,7 @@
     min-height: 100vh;
 }
 
-/* Website heading */
+
 
 .help-title {
     background-color: #101d35;
@@ -28,7 +28,7 @@
     border-bottom: 4px solid #b99a60;
 }
 
-/* Page heading */
+
 
 .help-heading {
     text-align: center;
@@ -47,7 +47,7 @@
     font-size: 14px;
 }
 
-/* Query and call sections */
+
 
 .help-container {
     width: 90%;
@@ -75,7 +75,7 @@
     margin-bottom: 20px;
 }
 
-/* Input fields */
+
 
 .query-input-section {
     display: flex;
@@ -111,7 +111,7 @@
     box-shadow: 0 0 5px rgba(185, 154, 96, 0.3);
 }
 
-/* Buttons */
+
 
 .help-btn {
     padding: 12px 25px;
@@ -130,7 +130,7 @@
     color: #101d35;
 }
 
-/* FAQ section */
+
 
 .faq-section {
     width: 90%;
@@ -148,7 +148,7 @@
     padding-bottom: 15px;
 }
 
-/* Individual FAQ cards */
+
 
 .faq-card {
     background-color: white;
@@ -187,7 +187,7 @@
     color: #172945;
 }
 
-/* Query solved section */
+
 
 .solved-section {
     width: 90%;
@@ -212,7 +212,6 @@
     accent-color: #172945;
 }
 
-/* Tablet screen */
 
 @media screen and (max-width: 768px) {
 
@@ -222,7 +221,7 @@
 
 }
 
-/* Mobile screen */
+
 
 @media screen and (max-width: 480px) {
 

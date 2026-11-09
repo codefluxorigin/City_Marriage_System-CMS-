@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
 
-/* Basic page settings */
+
 
 * {
     margin: 0;
@@ -17,7 +17,7 @@
 }
 
 
-/* Main heading */
+
 
 .home-title {
     background-color: #101d35;
@@ -32,7 +32,6 @@
 }
 
 
-/* Navigation sections */
 
 .nav-main,
 .nav-account,
@@ -95,7 +94,7 @@
 }
 
 
-/* Video and quote layout */
+
 
 .video-section {
     display: flex;
@@ -107,7 +106,7 @@
 }
 
 
-/* Left quote section */
+
 
 .quote-section {
     width: 42%;
@@ -144,7 +143,7 @@
 }
 
 
-/* Video styling */
+
 
 .home-video {
     width: 55%;
@@ -156,7 +155,7 @@
 }
 
 
-/* Quote fade animation */
+
 
 @keyframes fadeEffect {
 
@@ -173,7 +172,7 @@
 }
 
 
-/* Appointment section */
+
 
 .appointment-section {
     display: flex;
@@ -202,7 +201,7 @@
 }
 
 
-/* Footer */
+
 
 .home-footer {
     background-color: #101d35;
@@ -233,7 +232,7 @@
 }
 
 
-/* Help section */
+
 
 .help-section {
     background-color: #101d35;
@@ -243,7 +242,7 @@
 }
 
 
-/* Tablet responsive design */
+
 
 @media screen and (max-width: 768px) {
 
@@ -295,7 +294,7 @@
 }
 
 
-/* Mobile responsive design */
+
 
 @media screen and (max-width: 480px) {
 
