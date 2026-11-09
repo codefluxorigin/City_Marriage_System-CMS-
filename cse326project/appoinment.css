@@ -1,12 +1,107 @@
-h1 {
-    font-family: 'Cinzel', serif;
-    font-size: 2.2rem;
-    font-weight: 800;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.appointment-body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f1f2f4;
+    color: #252b35;
+    min-height: 100vh;
+}
+
+.appointment-header {
+    background-color: #101d35;
+    padding: 25px;
     text-align: center;
-    color: #6b1426;
+}
+
+.cms-title {
+    font-family: 'Cinzel', serif;
+    color: #ffffff;
+    font-size: 30px;
     letter-spacing: 2px;
-    margin: 15px auto 25px auto;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8),
-        0 2px 8px rgba(107, 20, 38, 0.15);
+}
+
+.appointment-container {
+    width: 90%;
+    max-width: 550px;
+    margin: 60px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-heading {
+    font-family: 'Cinzel', serif;
+    color: #101d35;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.appointment-description {
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+    font-weight: 600;
+    color: #25344d;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c9cdd3;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #b49a60;
+}
+
+.book-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #101d35;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #b49a60;
+    color: #101d35;
+}
+
+@media (max-width: 600px) {
+    .cms-title {
+        font-size: 21px;
+    }
+
+    .appointment-container {
+        margin: 30px auto;
+        padding: 25px 20px;
+    }
 }

@@ -1,12 +1,223 @@
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Basic page settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.document-body {
+    background-color: #f3f4f6;
+    font-family: 'Inter', sans-serif;
+    color: #252c38;
+    min-height: 100vh;
+}
+
+/* Website heading */
+
+.document-title {
+    background-color: #101d35;
+    color: white;
     font-family: 'Cinzel', serif;
-    font-size: 2.2rem;
-    font-weight: 800;
+    font-size: 30px;
     text-align: center;
-    color: #6b1426;
+    padding: 30px 15px;
     letter-spacing: 2px;
-    margin: 15px auto 25px auto;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8),
-        0 2px 8px rgba(107, 20, 38, 0.15);
+    border-bottom: 4px solid #b99a60;
+}
+
+/* Page heading */
+
+.document-heading {
+    text-align: center;
+    margin: 40px 15px 30px;
+}
+
+.document-heading h2 {
+    font-family: 'Cinzel', serif;
+    color: #172945;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.document-heading p {
+    color: #777;
+    font-size: 15px;
+}
+
+/* Document cards layout */
+
+.document-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Individual document card */
+
+.document-card {
+    background-color: white;
+    border: 1px solid #d6d9df;
+    border-radius: 8px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(16, 29, 53, 0.08);
+    transition: 0.3s;
+}
+
+.document-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(16, 29, 53, 0.13);
+}
+
+.document-card h3 {
+    font-family: 'Cinzel', serif;
+    color: #172945;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+/* Document images */
+
+.document-image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: #f3f4f6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Upload fields */
+
+.upload-field {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.upload-field label {
+    display: block;
+    color: #172945;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.file-input {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #c7cbd2;
+    border-radius: 5px;
+    background-color: #f9fafb;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+
+/* Verification section */
+
+.verification-section {
+    width: 90%;
+    max-width: 900px;
+    margin: 35px auto 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #d6d9df;
+    border-left: 4px solid #b99a60;
+    border-radius: 5px;
+}
+
+.verification-section label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #172945;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.verification-section input {
+    margin-top: 4px;
+    accent-color: #172945;
+}
+
+/* Reset and Submit buttons */
+
+.document-buttons {
+    text-align: center;
+    margin: 25px auto 50px;
+}
+
+.reset-btn,
+.submit-btn {
+    padding: 12px 35px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 8px;
+}
+
+.reset-btn {
+    background-color: white;
+    color: #172945;
+    border: 1px solid #b99a60;
+}
+
+.reset-btn:hover {
+    background-color: #e5e7eb;
+}
+
+.submit-btn {
+    background-color: #172945;
+    color: white;
+    border: none;
+}
+
+.submit-btn:hover {
+    background-color: #b99a60;
+    color: #101d35;
+}
+
+/* Tablet screen */
+
+@media screen and (max-width: 900px) {
+    .document-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile screen */
+
+@media screen and (max-width: 600px) {
+    .document-title {
+        font-size: 20px;
+        padding: 25px 10px;
+    }
+
+    .document-heading h2 {
+        font-size: 22px;
+    }
+
+    .document-grid {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .document-card {
+        padding: 20px;
+    }
+
+    .document-image {
+        height: 160px;
+    }
+
+    .verification-section {
+        width: 90%;
+    }
 }

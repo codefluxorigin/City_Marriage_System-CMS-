@@ -4,141 +4,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Apply for Marriage | City Marriage System</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https;//fonts.glastic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
-        href="https;//fonts.googleeapis.com/css2?family=Cinzel:wght@600;700;800&family=poppins:wght@400:500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap"
         rel="stylesheet">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="apply.css">
 </head>
 
-<body>
-    <h1>
-        CITY MARRAIGE SYSTEM [CMS]
-    </h1>
-    <h2>
-        Apply For The Maraige.
-    </h2>
-    <div>
-        <form action="">
-            <div>
-                Name of the male spouse:<input type="text">
-            </div>
-            <br>
-            <div>
-                Name of the female spouse:<input type="text">
-            </div>
-            <br>
-            <div>
-                Date Of Birth (M): <input type="date">
-            </div>
-            <br>
-            <div>
-                Date Of Birth(F):<input type="date">
-            </div>
-            <br>
-            <div>
+<body id="apply-page">
 
-                Email (M):<input type="email">
-            </div>
-            <br>
-            <div>
-                Email(F):<input type="email">
-            </div>
-            <br>
-            <div>
-                Phone(M):<input type="number">
-            </div>
-            <br>
-            <div>
-                Phone(F):<input type="number">
+    <!-- Header -->
+    <header class="apply-header" id="header">
 
-            </div>
-            <br>
-            <div>
-                Permanent Address (M):<input type="text">
-            </div>
-            <br>
-            <div>
-                Permannet Address (F):<input type="text">
+        <h1 class="site-title">
+            CITY MARRIAGE SYSTEM <span>[CMS]</span>
+        </h1>
 
-            </div>
+    </header>
 
-            <br>
-            <div>
-                Addharcard id(M):<input type="number">
+    <!-- Main Content -->
+    <main class="apply-container" id="main-content">
 
-            </div>
-            <br>
-            <div>
-                Addharcard id(F):<input type="number">
+        <section class="apply-card" id="application-section">
 
-            </div>
-            <br>
-            <div>
-                Pancard id(M):<input type="text">
-            </div>
-            <br>
-            <div>
-                Pancard id(F):<input type="text">
-            </div>
-            <div>
-                <p>Some questions:</p>
-                <br>
-                <label for="A">Are you willing to marry each other:</label>
+            <h2 class="section-title">
+                Apply For The Marriage
+            </h2>
 
-                <select yes="yes">
-                    <option value="yes">yes</option>
-                    <option value="NO">No</option>
-                </select>
-                <br>
-                <label for="B">No pressure from relatives and parents?</label>
+            <p class="section-description">
+                Please provide the details of both spouses.
+            </p>
 
-                <select yes="yes">
-                    <option value="yes">yes</option>
-                    <option value="NO">No</option>
-                </select>
-                <br><label for="C">Is it a arrange marraige?</label>
+            <form action="" id="marriage-form">
 
-                <select yes="yes">
-                    <option value="yes">yes</option>
-                    <option value="NO">No</option>
-                </select>
-                <br>
-                <label for="D">Is male spouse family asking for dowary?</label>
+                <!-- Spouse Details -->
+                <h3 class="form-heading">Personal Details</h3>
 
-                <select yes="yes">
-                    <option value="yes">yes</option>
-                    <option value="NO">No</option>
-                </select>
-                <br>
-                <label for="D">Are you both from same caste? </label>
+                <div class="form-grid">
 
-                <select yes="yes">
-                    <option value="yes">yes</option>
-                    <option value="NO">No</option>
-                </select>
+                    <div class="form-group">
+                        <label for="male-name">Name of the male spouse:</label>
+                        <input type="text" id="male-name" name="male-name">
+                    </div>
 
+                    <div class="form-group">
+                        <label for="female-name">Name of the female spouse:</label>
+                        <input type="text" id="female-name" name="female-name">
+                    </div>
 
+                    <div class="form-group">
+                        <label for="male-dob">Date Of Birth (M):</label>
+                        <input type="date" id="male-dob" name="male-dob">
+                    </div>
 
-            </div>
+                    <div class="form-group">
+                        <label for="female-dob">Date Of Birth (F):</label>
+                        <input type="date" id="female-dob" name="female-dob">
+                    </div>
 
-        </form>
-        <div>
-            <a href="document.html">
-                <button>
+                    <div class="form-group">
+                        <label for="male-email">Email (M):</label>
+                        <input type="email" id="male-email" name="male-email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="female-email">Email (F):</label>
+                        <input type="email" id="female-email" name="female-email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="male-phone">Phone (M):</label>
+                        <input type="tel" id="male-phone" name="male-phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="female-phone">Phone (F):</label>
+                        <input type="tel" id="female-phone" name="female-phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="male-address">Permanent Address (M):</label>
+                        <input type="text" id="male-address" name="male-address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="female-address">Permanent Address (F):</label>
+                        <input type="text" id="female-address" name="female-address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="male-aadhaar">Aadhaar Card ID (M):</label>
+                        <input type="text" id="male-aadhaar" name="male-aadhaar">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="female-aadhaar">Aadhaar Card ID (F):</label>
+                        <input type="text" id="female-aadhaar" name="female-aadhaar">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="male-pan">PAN Card ID (M):</label>
+                        <input type="text" id="male-pan" name="male-pan">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="female-pan">PAN Card ID (F):</label>
+                        <input type="text" id="female-pan" name="female-pan">
+                    </div>
+
+                </div>
+
+                <!-- Questions -->
+                <div class="questions-section" id="questions">
+
+                    <h3 class="form-heading">Some Questions</h3>
+
+                    <div class="form-group">
+                        <label for="consent">
+                            Are you willing to marry each other?
+                        </label>
+
+                        <select id="consent" name="consent">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pressure">
+                            No pressure from relatives and parents?
+                        </label>
+
+                        <select id="pressure" name="pressure">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="arranged">
+                            Is it an arranged marriage?
+                        </label>
+
+                        <select id="arranged" name="arranged">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dowry">
+                            Is the male spouse's family asking for dowry?
+                        </label>
+
+                        <select id="dowry" name="dowry">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="caste">
+                            Are you both from the same caste?
+                        </label>
+
+                        <select id="caste" name="caste">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </form>
+
+            <!-- Action Buttons -->
+            <div class="form-actions" id="form-actions">
+
+                <a href="document.html" class="action-btn secondary-btn">
                     Upload Documents
-                </button>
-            </a>
-        </div>
+                </a>
 
-        <div>
-            <a href="thanks.html"><button>
+                <a href="thanks.html" class="action-btn primary-btn">
                     Submit and Apply
-                </button></a>
-        </div>
+                </a>
 
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="apply-footer" id="footer">
+
+        <p>
+            &copy; 2026 City Marriage System. All Rights Reserved.
+        </p>
+
+    </footer>
 
 </body>
 

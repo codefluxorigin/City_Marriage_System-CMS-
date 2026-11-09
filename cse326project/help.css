@@ -1,12 +1,260 @@
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Basic page settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.help-body {
+    background-color: #f3f4f6;
+    font-family: 'Inter', sans-serif;
+    color: #252c38;
+    min-height: 100vh;
+}
+
+/* Website heading */
+
+.help-title {
+    background-color: #101d35;
+    color: white;
     font-family: 'Cinzel', serif;
-    font-size: 2.2rem;
-    font-weight: 800;
+    font-size: 30px;
     text-align: center;
-    color: #6b1426;
+    padding: 30px 15px;
     letter-spacing: 2px;
-    margin: 15px auto 25px auto;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8),
-        0 2px 8px rgba(107, 20, 38, 0.15);
+    border-bottom: 4px solid #b99a60;
+}
+
+/* Page heading */
+
+.help-heading {
+    text-align: center;
+    margin: 40px 15px 30px;
+}
+
+.help-heading h2 {
+    font-family: 'Cinzel', serif;
+    color: #172945;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.help-heading p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Query and call sections */
+
+.help-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.query-section,
+.call-section {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #d6d9df;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(16, 29, 53, 0.08);
+}
+
+.query-section h3,
+.call-section h3 {
+    font-family: 'Cinzel', serif;
+    color: #172945;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+
+.query-input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.call-input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.call-input-section label {
+    color: #172945;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.help-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c7cbd2;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.help-input:focus {
+    border-color: #b99a60;
+    box-shadow: 0 0 5px rgba(185, 154, 96, 0.3);
+}
+
+/* Buttons */
+
+.help-btn {
+    padding: 12px 25px;
+    background-color: #172945;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.help-btn:hover {
+    background-color: #b99a60;
+    color: #101d35;
+}
+
+/* FAQ section */
+
+.faq-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.faq-heading {
+    font-family: 'Cinzel', serif;
+    color: #172945;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #b99a60;
+    padding-bottom: 15px;
+}
+
+/* Individual FAQ cards */
+
+.faq-card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #d6d9df;
+    border-left: 4px solid #b99a60;
+    border-radius: 6px;
+    box-shadow: 0 3px 12px rgba(16, 29, 53, 0.06);
+}
+
+.faq-card h3 {
+    color: #172945;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.faq-card p,
+.faq-card li {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.faq-card ul {
+    padding-left: 22px;
+    margin-top: 12px;
+}
+
+.faq-card li {
+    margin-bottom: 10px;
+}
+
+.faq-card strong {
+    color: #172945;
+}
+
+/* Query solved section */
+
+.solved-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto 50px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #d6d9df;
+    border-radius: 6px;
+}
+
+.solved-section label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #172945;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.solved-section input {
+    accent-color: #172945;
+}
+
+/* Tablet screen */
+
+@media screen and (max-width: 768px) {
+
+    .help-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Mobile screen */
+
+@media screen and (max-width: 480px) {
+
+    .help-title {
+        font-size: 20px;
+        padding: 25px 10px;
+    }
+
+    .help-heading h2 {
+        font-size: 21px;
+    }
+
+    .faq-heading {
+        font-size: 21px;
+    }
+
+    .faq-card {
+        padding: 18px;
+    }
+
+    .faq-card h3 {
+        font-size: 15px;
+    }
+
+    .faq-card p,
+    .faq-card li {
+        font-size: 13px;
+    }
+
+    .query-section,
+    .call-section {
+        padding: 20px;
+    }
+
 }

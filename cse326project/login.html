@@ -4,40 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>CMS Login</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https;//fonts.glastic.com" crossorigin>
-    <link
-        href="https;//fonts.googleeapis.com/css2?family=Cinzel:wght@600;700;800&family=poppins:wght@400:500&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link rel="stylesheet" href="login.css">
 </head>
 
-<body>
-    <h1>
+<body class="login-body">
+
+    <h1 class="login-title" id="site-title">
         CITY MARRAIGE SYSTEM [CMS]
     </h1>
-    <h2>
-        Login yourself
-    </h2>
-    <div>
-        Enter your Email id:<input type="email">
-    </div>
-    <div>
-        Enter your Password:<input type="password">
-    </div>
-    <div>
-        <a href="homelogin.html"> <button> LOGIN</button></a>
-    </div>
-    <div>
-        <p>
-            If don't have aaccount? Register yourself first...
-            <a href="regitration form .html"><button>
-                    Register
-                </button></a>
-        </p>
-    </div>
 
+    <div class="login-container" id="login-container">
+
+        <h2 class="login-heading">
+            Login yourself
+        </h2>
+
+        <div class="login-email">
+            <label for="email">Enter your Email id:</label>
+            <input type="email" id="email" class="login-input" placeholder="Enter your email" required>
+        </div>
+
+        <div class="login-password">
+            <label for="password">Enter your Password:</label>
+            <input type="password" id="password" class="login-input" placeholder="Enter your password" required>
+        </div>
+
+        <div class="login-button-section">
+            <a href="homelogin.html">
+                <button class="login-btn" id="login-button">LOGIN</button>
+            </a>
+        </div>
+
+        <div class="register-section">
+            <p>
+                If you don't have an account? Register yourself first...
+            </p>
+
+            <a href="regitration form .html">
+                <button class="register-btn">Register</button>
+            </a>
+        </div>
+
+    </div>
 
 </body>
 

@@ -4,88 +4,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CMS Document Upload</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https;//fonts.glastic.com" crossorigin>
-    <link
-        href="https;//fonts.googleeapis.com/css2?family=Cinzel:wght@600;700;800&family=poppins:wght@400:500&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link rel="stylesheet" href="document.css">
 </head>
 
-<body>
-    <h1>
+<body class="document-body">
+
+    <h1 class="document-title" id="site-title">
         CITY MARRAIGE SYSTEM [CMS]
     </h1>
-    <h2>
-        Documents
-    </h2>
-    <h2>
-        Upload Your Documents For verification
-    </h2>
-    <img src="addharcard.jpg" width="400 " height="270">
-    <div>
-        Upload Husbands:<input type="file">
-    </div>
-    <div>
-        Upload wifes : <input type="file">
+
+    <div class="document-heading">
+        <h2>Documents</h2>
+        <p>Upload Your Documents For Verification</p>
     </div>
 
+    <form class="document-form">
 
-    <img src="pancard.jpg" width="400" height="270">
-    <div>
-        Upload Husbands:<input type="file">
-    </div>
-    <div>
-        Upload wifes : <input type="file">
-    </div>
+        <div class="document-grid">
 
-    <img src="birthcertificate.jpg" width="400" height="270">
-    <div>
-        Upload Husbands:<input type="file">
-    </div>
-    <div>
-        Upload wifes : <input type="file">
-    </div>
+            <!-- Aadhaar Card -->
+            <div class="document-card">
+                <h3>Aadhaar Card</h3>
+                <img src="addharcard.jpg" class="document-image" alt="Aadhaar Card">
 
-    <img src="passport.jpg " width="400" height="270">
-    <div>
-        Upload Husbands:<input type="file">
-    </div>
-    <div>
-        Upload wifes : <input type="file">
-    </div>
+                <div class="upload-field">
+                    <label for="husband-aadhaar">Upload Husband's:</label>
+                    <input type="file" id="husband-aadhaar" name="husband-aadhaar" class="file-input"
+                        accept=".pdf,.jpg,.jpeg,.png">
+                </div>
 
-    <img src="income certificate .jpg" width="400" height="270">
-    <div>
-        Upload Husbands:<input type="file">
-    </div>
-    <div>
-        Upload wifes : <input type="file">
-    </div>
+                <div class="upload-field">
+                    <label for="wife-aadhaar">Upload Wife's:</label>
+                    <input type="file" id="wife-aadhaar" name="wife-aadhaar" class="file-input"
+                        accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+            </div>
 
-    <img src="familtphoto.jpg" width="400" height="270">
-    <div>
-        Upload Husbands:<input type="file">
-    </div>
-    <div>
-        Upload wifes : <input type="file">
-    </div>
-    <div>
-        <input type="reset" value="Rest">
-    </div>
-    <div>
-        "Verified that above uploaded documents are correct and are according to best of your knowladge":<input
-            type="checkbox">
-    </div>
-    <div>
-        <a href="thanks.html"><button>
-                submit
-            </button></a>
-    </div>
+            <!-- PAN Card -->
+            <div class="document-card">
+                <h3>PAN Card</h3>
+                <img src="pancard.jpg" class="document-image" alt="PAN Card">
 
-</body>
+                <div class="upload-field">
+                    <label for="husband-pan">Upload Husband's:</label>
+                    <input type="file" id="husband-pan" name="husband-pan" class="file-input"
+                        accept=".pdf,.jpg,.jpeg,.png">
+                </div>
 
+                <div class="upload-field">
+                    <label for="wife-pan">Upload Wife's:</label>
+                    <input type="file" id="wife-pan" name="wife-pan" class="file-input" accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+            </div>
+
+            <!-- Birth Certificate -->
+            <div class="document-card">
+                <h3>Birth Certificate</h3>
+                <img src="birthcertificate.jpg" class="document-image" alt="Birth Certificate">
+
+                <div class="upload-field">
+                    <label for="husband-birth">Upload Husband's:</label>
+                    <input type="file" id="husband-birth" name="husband-birth" class="file-input"
+                        accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+
+                <div class="upload-field">
+                    <label for="wife-birth">Upload Wife's:</label>
+                    <input type="file" id="wife-birth" name="wife-birth" class="file-input"
+                        accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+            </div>
+
+            <!-- Passport -->
+            <div class="document-card">
+                <h3>Passport</h3>
+                <img src="passport.jpg" class="document-image" alt="Passport">
+
+                <div class="upload-field">
+                    <label for="husband-passport">Upload Husband's:</label>
+                    <input type="file" id="husband-passport" name="husband-passport" class="file-input"
+                        accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+
+                <div class="upload-field">
+                    <label for="wife-passport">Upload Wife's:</label>
+                    <input type="file" id="wife-passport" name="wife-passport" class="file-input"
+                        accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+            </div>
+
+            <!-- Income Certificate -->
+            <div class="document-card">
+                <h3>Income Certificate</h3>
+                <img src="income certificate .jpg" class="document-image" alt="Income Certificate">
+
+                <div class="upload-field">
+                    <label for="husband-income">Upload Husband's:</label>
+                    <input type="file" id="husband-income" name="husband-income" class="file-input"
+                        accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+
+                <div class="upload-field">
+                    <label for="wife-income">Upload Wife's:</label>
+                    <input type="file" id="wife-income" name="wife-income" class="file-input"
+                        accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+            </div>
+
+            <!-- Family Photo -->
+            <div class="document-card">
+                <h3>Family Photo</h3>
+                <img src="familtphoto.jpg" class="document-image" alt="Family Photo">
+
+                <div class="upload-field">
+                    <label for="husband-family">Upload Husband's:</label>
+                    <input type="file" id="husband-family" name="husband-family" class="file-input"
+                        accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+
+                <div class="upload-field">
+                    <label for="wife-family">Upload Wife's:</label>
+                    <input type="file" id="wife-family" name="wife-family" class="file-input"
+                        accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="verification-section">
+            <label>
+                <input type="checkbox" id="verification" name="verification" required>
+                I verify that the above uploaded documents are correct
+                and are according to the best of my knowledge.
+            </label>
+        </div>
+
+        <div class="document-buttons">
+            <input type="reset" value="Reset" class="reset-btn">
+
+            <a href="thanks.html">
+                <button type="button" class="submit-btn">
+                    Submit
+                </button>
+            </a>
+        </div>
+
+    </form>
 
 </body>
 

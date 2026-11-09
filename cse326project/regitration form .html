@@ -4,54 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CMS Registration</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https;//fonts.glastic.com" crossorigin>
-    <link
-        href="https;//fonts.googleeapis.com/css2?family=Cinzel:wght@600;700;800&family=poppins:wght@400:500&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link rel="stylesheet" href="register.css">
 </head>
 
-<body>
-    <h1>CITY MARRAIGE SYSTEM [CMS]</h1>
-    <h2>
-        Register yourself
-    </h2>
-    <p>
-        don't have account register yourself!
-    </p>
+<body class="register-body">
 
-    <div>
-        Enter your Name:<input type="text">
-    </div>
-    <br>
-    <div>
-        Enter your Email id: <input type="email">
-    </div>
-    <br>
-    <div>
-        Enter your Phone Number:<input type="number">
-    </div>
-    <br>
-    <div>
-        Make password:<input type="password">
-    </div>
-    <div>
-        <a href="thanks.html"><button>Submit</button></a>
-    </div>
-    <br>
-    <div>
-        <p>Already have a account ?
+    <h1 class="register-title" id="site-title">
+        CITY MARRAIGE SYSTEM [CMS]
+    </h1>
 
+    <div class="register-container" id="register-container">
+
+        <h2 class="register-heading">
+            Register yourself
+        </h2>
+
+        <p class="register-intro">
+            don't have account register yourself!
         </p>
-        <a href="login.html"><button> Login</button></a>
+
+        <div class="name-section">
+            <label for="name">Enter your Name:</label>
+            <input type="text" id="name" class="register-input">
+        </div>
+
+        <br>
+
+        <div class="email-section">
+            <label for="email">Enter your Email id:</label>
+            <input type="email" id="email" class="register-input">
+        </div>
+
+        <br>
+
+        <div class="phone-section">
+            <label for="phone">Enter your Phone Number:</label>
+            <input type="tel" id="phone" class="register-input">
+        </div>
+
+        <br>
+
+        <div class="password-section">
+            <label for="password">Make password:</label>
+            <input type="password" id="password" class="register-input">
+        </div>
+
+        <div class="submit-section">
+            <a href="thanks.html">
+                <button class="register-submit-btn" id="submit-button">
+                    Submit
+                </button>
+            </a>
+        </div>
+
+        <br>
+
+        <div class="login-section">
+            <p>Already have a account?</p>
+
+            <a href="login.html">
+                <button class="register-login-btn">
+                    Login
+                </button>
+            </a>
+        </div>
+
     </div>
-
-
-
-
-
 
 </body>
 

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Basic page settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.status-body {
+    background-color: #f3f4f6;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    color: #252c38;
+}
+
+/* Website heading */
+
+.status-title {
+    background-color: #101d35;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 15px;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #b99a60;
+}
+
+/* Status container */
+
+.status-container {
+    width: 450px;
+    max-width: 90%;
+    margin: 100px auto;
+    background-color: white;
+    padding: 40px 35px;
+    border-radius: 8px;
+    border: 1px solid #d6d9df;
+    box-shadow: 0 5px 20px rgba(16, 29, 53, 0.10);
+}
+
+/* Form heading */
+
+.status-heading {
+    font-family: 'Cinzel', serif;
+    color: #172945;
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 35px;
+    border-bottom: 2px solid #b99a60;
+    padding-bottom: 18px;
+}
+
+/* Input sections */
+
+.application-section,
+.otp-section {
+    margin-bottom: 22px;
+}
+
+.application-section label,
+.otp-section label {
+    display: block;
+    color: #172945;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.status-input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c7cbd2;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+.status-input:focus {
+    border-color: #b99a60;
+    box-shadow: 0 0 5px rgba(185, 154, 96, 0.3);
+}
+
+/* Track button */
+
+.track-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.track-btn {
+    width: 100%;
+    padding: 13px;
+    background-color: #172945;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.track-btn:hover {
+    background-color: #b99a60;
+    color: #101d35;
+}
+
+/* Mobile responsive design */
+
+@media screen and (max-width: 480px) {
+
+    .status-title {
+        font-size: 20px;
+        padding: 25px 10px;
+    }
+
+    .status-container {
+        padding: 30px 20px;
+        margin: 60px auto;
+    }
+
+    .status-heading {
+        font-size: 20px;
+    }
+}

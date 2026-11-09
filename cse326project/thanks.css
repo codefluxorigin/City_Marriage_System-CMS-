@@ -1,0 +1,188 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f2f4;
+    color: #263449;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+.thanks-header {
+    background-color: #14243d;
+    padding: 25px 6%;
+    text-align: center;
+    border-bottom: 3px solid #b69b62;
+}
+
+.site-title {
+    font-family: 'Cinzel', serif;
+    color: #ffffff;
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.site-title span {
+    color: #c4a96e;
+}
+
+/* MAIN CONTAINER */
+
+.thanks-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* THANK YOU CARD */
+
+.thanks-card {
+    background-color: #ffffff;
+    max-width: 650px;
+    width: 100%;
+    padding: 55px 40px;
+    text-align: center;
+    border-radius: 12px;
+    border-top: 5px solid #b69b62;
+
+    box-shadow: 0 8px 30px rgba(20, 36, 61, 0.10);
+}
+
+/* SUCCESS ICON */
+
+.success-icon {
+    width: 75px;
+    height: 75px;
+    background-color: #14243d;
+    color: #c4a96e;
+
+    border: 2px solid #b69b62;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 38px;
+    margin: 0 auto 25px;
+}
+
+/* TITLE */
+
+.thanks-title {
+    font-family: 'Cinzel', serif;
+    color: #14243d;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+/* GOLD DIVIDER */
+
+.gold-divider {
+    width: 90px;
+    height: 3px;
+    background-color: #b69b62;
+    margin: 20px auto;
+}
+
+/* MESSAGE */
+
+.thanks-message {
+    font-size: 21px;
+    font-weight: 600;
+    color: #263449;
+    margin-bottom: 15px;
+}
+
+.thanks-description {
+    color: #737b87;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* CARD FOOTER */
+
+.thanks-footer {
+    color: #b69b62;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* BOTTOM FOOTER */
+
+.thanks-bottom {
+    background-color: #14243d;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #b69b62;
+    font-size: 13px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+    .site-title {
+        font-size: 20px;
+    }
+
+    .thanks-container {
+        padding: 35px 15px;
+    }
+
+    .thanks-card {
+        padding: 40px 22px;
+    }
+
+    .thanks-title {
+        font-size: 29px;
+    }
+
+    .thanks-message {
+        font-size: 18px;
+    }
+
+    .thanks-description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .site-title {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .thanks-card {
+        padding: 35px 18px;
+    }
+
+    .thanks-title {
+        font-size: 25px;
+    }
+
+    .success-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 30px;
+    }
+
+    .thanks-bottom {
+        font-size: 11px;
+    }
+}
