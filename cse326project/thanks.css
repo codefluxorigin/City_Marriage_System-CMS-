@@ -1,4 +1,4 @@
-/* GENERAL STYLING */
+
 
 * {
     margin: 0;
@@ -15,7 +15,7 @@ body {
     flex-direction: column;
 }
 
-/* HEADER */
+
 
 .thanks-header {
     background-color: #14243d;
@@ -35,7 +35,7 @@ body {
     color: #c4a96e;
 }
 
-/* MAIN CONTAINER */
+
 
 .thanks-container {
     flex: 1;
@@ -45,7 +45,7 @@ body {
     padding: 50px 20px;
 }
 
-/* THANK YOU CARD */
+
 
 .thanks-card {
     background-color: #ffffff;
@@ -59,7 +59,7 @@ body {
     box-shadow: 0 8px 30px rgba(20, 36, 61, 0.10);
 }
 
-/* SUCCESS ICON */
+
 
 .success-icon {
     width: 75px;
@@ -78,7 +78,7 @@ body {
     margin: 0 auto 25px;
 }
 
-/* TITLE */
+
 
 .thanks-title {
     font-family: 'Cinzel', serif;
@@ -87,8 +87,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* GOLD DIVIDER */
-
 .gold-divider {
     width: 90px;
     height: 3px;
@@ -96,7 +94,7 @@ body {
     margin: 20px auto;
 }
 
-/* MESSAGE */
+
 
 .thanks-message {
     font-size: 21px;
@@ -112,7 +110,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* CARD FOOTER */
 
 .thanks-footer {
     color: #b69b62;
@@ -120,8 +117,6 @@ body {
     font-weight: 700;
     font-size: 15px;
 }
-
-/* BOTTOM FOOTER */
 
 .thanks-bottom {
     background-color: #14243d;
@@ -132,7 +127,6 @@ body {
     font-size: 13px;
 }
 
-/* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 768px) {
 
